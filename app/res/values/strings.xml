@@ -28,7 +28,7 @@
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="androidx_startup">androidx.startup</string>
-    <string name="app_name">MyDay210\n2.14</string>
+    <string name="app_name">MyDay210\n2.15</string>
     <string name="call_notification_answer_action">Answer</string>
     <string name="call_notification_answer_video_action">Video</string>
     <string name="call_notification_decline_action">Decline</string>
@@ -41,5 +41,5 @@
     <string name="package_name">com.mooja.myday210</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <string name="title_activity_main">MyDay210\n2.14</string>
+    <string name="title_activity_main">MyDay210\n2.15</string>
 </resources>
