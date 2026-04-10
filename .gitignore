@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# local env
+.env
+.env.local
+
+# runtime/cache
+.runtime/
+.gradle-local/
+
+# build outputs
+build/
+app/build/
+*.apk
+*.apks
+
+# misc
+*.log
