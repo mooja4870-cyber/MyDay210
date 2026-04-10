@@ -73,11 +73,21 @@ run_smoke_case() {
   node - <<'NODE' "$payload_file" "$username" "$password" "$blog_id"
 const fs = require("fs");
 const [payloadPath, username, password, blogId] = process.argv.slice(2);
+const owner = `${String(username).trim().toLowerCase()}::${String(blogId).trim().toLowerCase()}`;
 fs.writeFileSync(
   payloadPath,
   JSON.stringify(
     {
       credentials: { username, password, blogId },
+      credentialOwner: owner,
+      sessionKey: `myday210:${owner}`,
+      forceFreshLogin: true,
+      resetSession: true,
+      clearCookies: true,
+      clearStorage: true,
+      runtimeProject: "MyDay210",
+      runtimePackage: "com.mooja.myday210",
+      runtimeSetupKey: "MYDAY210_SETUP_V1",
     },
     null,
     2,

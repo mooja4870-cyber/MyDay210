@@ -1,6 +1,6 @@
 # PROJECT_STATUS
 
-- Last Updated: 2026-04-10 13:52:56
+- Last Updated: 2026-04-10 14:28:23
 - Policy: 작업 시작 전 이 파일을 먼저 확인하고, 없으면 생성 후 유지
 - Harness Mode: ENABLED
 - Deploy Rule: 코드 수정 후 `빌드 -> 푸시 -> 백엔드 배포 -> E2E smoke test -> 설치 -> 실행` 필수
@@ -41,6 +41,7 @@
 | 2026-04-10 | 2.11 | **210 런타임 식별 강화**: 앱 라벨/title을 `MyDay210`로 바꾸고, WebView 상단 식별 배지를 추가해 209/20과 시각적으로 구분 |
 | 2026-04-10 | 2.11 | **210 전용 저장/발행 스코프 강화**: referral-share.js를 SecurePrefs 우선 단일 입구로 통합하고, /api/publish payload에 credentialOwner/sessionKey/reset flags를 추가 |
 | 2026-04-10 | 2.11 | **210 전용 하네스 가드 강화**: preflight에서 209/20 식별자 혼입을 차단하고, 설치 후 `com.mooja.myday210` 패키지 및 foreground runtime 검증을 강제 |
+| 2026-04-10 | 2.11 | **210 smoke payload 보강**: backend_publish_smoke.sh가 MyDay210 credentialOwner/sessionKey/runtime metadata를 함께 보내도록 수정 |
 
 ## Next Rule
 - 코드 수정 후 이 파일의 `Last Updated`와 `Change Log`를 갱신
