@@ -1,6 +1,6 @@
 # PROJECT_STATUS
 
-- Last Updated: 2026-04-10 16:14:44
+- Last Updated: 2026-04-10 16:54:05
 - Policy: 작업 시작 전 이 파일을 먼저 확인하고, 없으면 생성 후 유지
 - Harness Mode: ENABLED
 - Deploy Rule: 코드 수정 후 `빌드 -> 푸시 -> 백엔드 배포 -> E2E smoke test -> 설치 -> 실행` 필수
@@ -8,11 +8,11 @@
 - **⚠️ 분리 모드**: 이 폴더는 원본(MyDay20)의 복사본이지만, git remote와 앱 식별자를 MyDay210 기준으로 분리해 원본과 충돌하지 않도록 유지합니다.
 
 ## Current Target
-- App Label: `MyDay210\n2.13`
+- App Label: `MyDay210\n2.14`
 - App Id: `com.mooja.myday210`
 - Android Package: `com.mooja.myday210`
 - Launch Component: `com.mooja.myday210/com.mooja.autopost.MainActivity`
-- Current Version: 2.13
+- Current Version: 2.14
 
 ## Structure
 - `app/` : Android(smali/apktool) project
@@ -44,6 +44,7 @@
 | 2026-04-10 | 2.11 | **210 smoke payload 보강**: backend_publish_smoke.sh가 MyDay210 credentialOwner/sessionKey/runtime metadata를 함께 보내도록 수정 |
 | 2026-04-10 | 2.12 | **비동기 발행 전환**: 메인 포스팅과 재발행이 /api/publish-async + publish-status polling을 사용하도록 바꿔 Railway 15분 제한으로 인한 Network Error를 차단 |
 | 2026-04-10 | 2.13 | **팝업 닫기 버튼 대비 강화**: Gemini API 키 안내 팝업의 둥근 원형 X 버튼 배경·테두리·텍스트 대비를 높여 가독성 개선 |
+| 2026-04-10 | 2.14 | **사용자 Gemini 키 비활성화**: 설정 화면의 Gemini API 키 입력란을 비활성화하고 `당분간 입력하지 않아도 됨!`으로 표시, 초기 설정 검증도 계정 정보만 보도록 조정 |
 
 ## Next Rule
 - 코드 수정 후 이 파일의 `Last Updated`와 `Change Log`를 갱신
